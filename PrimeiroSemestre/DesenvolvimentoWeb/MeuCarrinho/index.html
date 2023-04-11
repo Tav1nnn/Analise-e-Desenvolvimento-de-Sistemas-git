@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Meu Carro Novinho - Home</title>
+
+	<meta name="description" content="Site de venda de carros nacionais e importados com garantia">
+	<link rel="shortcut icon" href="imagens/icone.png">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <img src="imagens/logo.png" alt="logo" title="logo">
+            <a href="#" class="menu" onclick="mostrar()"><i class="fa-solid fa-bars"></i></a>
+        </div>
+       
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="estoque">
+                        <i class="fa-solid fa-car"></i>
+                        Estoque
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="contato">
+                        <i class="fa-solid fa-envelope"></i>
+                        Contato
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="imagens/banner.jpg" alt="" class="banner">
+
+    <main>
+        <h1>Veículos em Destaque</h1>
+
+        <div class="grid">
+            <div class="coluna"> 
+               <img src="imagens/1.jpg" alt="Carro" title="carro">
+               <p>Nome do Carro</p>
+               <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Pesquisar
+               </a>                      
+            </div>
+            <div class="coluna">
+                <img src="imagens/1.jpg" alt="Carro" title="carro">
+                <p>Nome do Carro</p>
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  Pesquisar  
+                </a>  
+            </div>
+            <div class="coluna">
+                <img src="imagens/1.jpg" alt="Carro" title="carro">
+                <p>Nome do Carro</p>
+                <a href="#">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                 Pesquisar   
+                </a>  
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Meu Carro Novinho - Todos os direitos reservados</p>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function mostrar(){
+            document.querySelector("nav").classList.toggle("mostrar")
+        }
+    </script>
+</body>
+</html>

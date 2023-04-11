@@ -1,0 +1,150 @@
+*{/*colocando margin 0 e padding 0 no global*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {/*para centralizar =*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {/* no celular a logo fica em cima e o menu embaixo*/
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+header nav{/* o menu tera 97% do width*/
+   
+    width: 97%;
+}
+
+header nav ul li a{/*os btn do menu tera font red e fundo preto com width de 100%*/
+    color: red;
+    background-color: black;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li{/* para tirar as bolinhas do li*/
+    list-style: none;
+}
+
+header nav ul li a{
+    width: 100%;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav ul li a:hover{/*quando o cursor estiver em cima do btn ele vai mudar seu fundo para red e a fonte para white*/
+    background: red;
+    color: white;
+}
+
+main {/* o main tera fundo de #CCC*/ 
+    background: #CCC;
+}
+
+.grid {/*no celuar o grid tera apenas uma coluna*/
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+}
+
+.coluna {/*a coluna ocupara 90% do seu width e uma sombra de 5px black*/
+    margin: 20px;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.coluna img{
+    width: 100%;
+}
+
+.coluna p {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+.flex{/**/
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 20px;
+}
+
+h1{
+    font-size: 2.2em;
+    padding-left: 20px;
+}
+
+.flex img{
+    border: 4px solid white;
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+}
+
+/*para computadores*/
+@media(min-width: 961px){
+    header {/*agora vai ter a logo e o menu um do lado do outro*/
+        flex-direction: row;
+        
+    }
+    .center {/*space between para cada */
+        justify-content: space-between;
+    }
+    header nav ul{/* os botões do menu estarão agora um do lado do outro */
+        display: flex;
+    }
+    header nav ul li{
+        margin: 2px;
+    }
+    header nav{
+        width: 30%;
+    }
+    .grid{/*o grid agora tem cinco colunas*/
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    .coluna{
+        height: 440px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flex {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .text{
+        width: 70%;
+    }
+
+    .flex img{
+        width: 30%;
+    }
+}

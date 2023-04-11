@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    background: url(images/bg.jpg) fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+p {
+    font-family: 'Quicksand', Tahoma;
+    font-size: 18px;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    background: red;
+}
+
+.banner {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    border-top: 7px solid white;
+    border-bottom: 7px solid white;
+}
+
+.text {
+    text-align: justify;
+    margin: 15px;
+}
+
+.poster {
+    border-radius: 5px;
+    border: 7px solid white;
+}
+
+h2 {
+    margin: 40px;
+    font-family: 'Quicksand', Tahoma;
+}

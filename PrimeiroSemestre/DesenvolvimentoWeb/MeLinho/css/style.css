@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-style: Inter, Tahoma;
+    color: #333;
+    font-size: 18px;
+}
+
+header {
+    background: yellow;
+    width: 100%;
+    box-shadow: 0 0 10px #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+}
+
+.menu {
+    float: right;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li i {
+    margin-right: 10px;
+}
+
+.btn {
+    border: 1px solid #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+@media((min-width: 480px) and (max-width: 960px)) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media(min-width: 961px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+main {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex .col-1 {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    margin: 10px
+}
+
+.flex .col-1 img{
+    width: 100%;
+}
+
+.valor {
+    color:red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.parcelamento {
+    font-size: 0.8em;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+
+@media((min-width: 480px) and (max-width: 960px)) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+   
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex .col-1 {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(min-width: 961px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+     .flex .col-1 {
+        width: calc(25% - 20px);
+    }
+}
+
+
+
+ 

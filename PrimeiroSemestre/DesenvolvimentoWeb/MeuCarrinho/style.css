@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: #ffcb00;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 70%;
+}
+
+header a i{
+    color: red;
+    font-size: 1em;
+}
+
+nav {
+    display: none;
+    width: 96%;
+    background: black;
+}
+
+ul, li, ul li a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+ul, li, ul li a:hover, ul li a i:hover {
+    color: red;
+}
+
+li{
+    list-style: none;
+}
+
+ul li a i{
+    color: white;
+}
+
+.mostrar {
+    display: block;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+.coluna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.coluna img{
+    width: 80%;
+}
+
+.coluna a{
+    text-decoration: none;
+    color: black;
+    background: #ffcb00;
+    margin: 4px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.coluna a:hover {
+    background: red;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+}
+
+footer{
+    height: 170px;
+    background: #ffcb00;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons a{
+    color: red;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.banner{
+    display: none;
+}
+
+@media(min-width: 1025px){
+    .grid {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        width: 60%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+        flex-direction: row;
+    }
+    header img{
+        width: 30%;
+    }
+
+    .flex{
+        width: 100%;
+    }
+
+    nav{
+        display: block;
+        background: #ffcb00;
+    }
+
+    .menu{
+        display: none;
+    }
+    ul{
+        display: flex;
+    }
+
+    .banner{
+        display: block;
+        width: 100%;
+    }
+
+}

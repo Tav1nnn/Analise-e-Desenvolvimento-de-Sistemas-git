@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="shortcut icon" href="images/icone.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+    <header class="wow fadeInLeft">
+        <h1>Formulários com HTML 5</h1>
+    </header>
+    <main class="wow fadeInRight">
+        <p>
+            Preencha esse formulário abaixo
+        </p>
+        <form name="form1" method="post" action="https://www.professorburnes.com.br/teste-form.php">
+            <label for="nome">
+                Preencha seu nome:
+            </label>
+            <input type="text" name="nome" id="nome" required placeholder="Coloque seu nome completo" class="input">
+
+            <label for="email">Preencha seu email:</label>
+            <input type="email" name="email" id="email" required placeholder="Coloque seu email" class="input">
+
+            <label for="escolaridade">Escolaridade:</label>
+            <select name="escolaridade" id="escolaridade" required class="input">
+                <option value="">
+                    Selecione uma opção
+                </option>
+                <option value="EMC">
+                    Ensino médio completo
+                </option>
+                <option value="ESC">
+                    Ensino superior completo
+                </option>
+            </select>
+
+            <label for="cursos">
+                Selecione os Cursos:
+            </label>
+            <input type="checkbox" name="photoshop" id="cursos">photoshop
+            <input type="checkbox" name="php" id="cursos">php
+
+            <label for="data">Data de Nascimento: </label>
+            <input type="date" name="date" id="data" class="input">
+
+            <button type="submit">
+                Enviar Dados
+            </button>
+        </form>
+    </main>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
