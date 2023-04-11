@@ -1,5 +1,6 @@
-#Lista IF e ELSE
+# Lista IF e ELSE
 1.	Faça um algoritmo para verificar se um número é par e divisível por 10.
+## 
 2.	Faça um algoritmo para verificar se um número é divisível por 7 ou por 23.
 3.	Escreva um programa para ler 5 valores inteiros, escrever o maior 
 deles e apresentar a posição de ordem em qual ele foi digitado (se ele foi digitado por primeiro ou por segundo ou...)
