@@ -1,3 +1,4 @@
+# Lista exercicio laços de repetição
 1.	Para os exercícios abaixo, desenvolver um algoritmo em C++:
 -	Faça um algoritmo para imprimir os números de 1 a 100.
 -	Faça um algoritmo para imprimir os números pares de 10 a 50.
