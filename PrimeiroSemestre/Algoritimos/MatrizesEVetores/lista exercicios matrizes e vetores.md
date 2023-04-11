@@ -28,7 +28,7 @@
 - retorne a soma dos elementos da diagonal primária
 - retorne a média dos elementos da diagonal secundária
 19.	Fornecida uma matriz 3x3 preenchida com “X” e “O”, verifique se um mesmo símbolo constitui uma sequência de três em alguma linha, coluna ou diagonal. (DESAFIO)
-X O X
-O X O
-O X X
+- X O X
+- O X O
+- O X X
 20.	Faça um algoritmo para retornar o número das colunas que possuem todos os elementos iguais.
