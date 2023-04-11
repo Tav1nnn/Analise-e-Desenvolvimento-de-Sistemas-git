@@ -1,3 +1,4 @@
+# Lista de exercicios matrizes e vetores
 1.	Faça um programa que lê 10 números de ponto flutuante para um vetor e, em seguida, exiba todos os elementos na tela.
 2.	Faça um programa que leia um número inteiro, esse número será o tamanho do vetor de inteiros a ser preenchido e apresentado logo em seguida
 3.	Faça um programa que leia um número inteiro, esse número será o tamanho do vetor de Strings a ser preenchido e apresentado logo em seguida
@@ -15,20 +16,20 @@
 15.	Dado dois vetores distintos de tamanhos aleatórios, retorne um terceiro vetor com os elementos que estão contidos em ambos os vetores, ou seja, faça a intersecção dos vetores (DESAFIO)
 16.	Faça um algoritmo que receba um vetor e verifique se os elementos estão em ordem decrescente. Deve utilizar valores True ou False (Booleanos) e tratá-los para obter uma resposta descritiva (DESAFIO)
 17.	Dado uma lista com nome de sete alunos e outra lista com a média final desses alunos. Calcule e mostre: (DESAFIO)
-a) o nome do aluno com a maior média (desconsiderar empates).
-b) o nome do aluno com a menor média.
-c) uma lista com o nome dos alunos aprovados.
+- o nome do aluno com a maior média (desconsiderar empates).
+- o nome do aluno com a menor média.
+- uma lista com o nome dos alunos aprovados.
  
-Matriz (DESAFIO)
+
 18.	Implemente um algoritmo para manipular matrizes que:
-a) retorne a média de todos os elementos da matriz
-b) retorne um vetor com a média de cada linha
-c) retorne um vetor com a média de cada coluna
-d) retorne o menor elemento e sua posição na matriz
-e) retorne a soma dos elementos da diagonal primária
-f) retorne a média dos elementos da diagonal secundária
+- retorne a média de todos os elementos da matriz
+- retorne um vetor com a média de cada linha
+- retorne um vetor com a média de cada coluna
+- retorne o menor elemento e sua posição na matriz
+- retorne a soma dos elementos da diagonal primária
+- retorne a média dos elementos da diagonal secundária
 19.	Fornecida uma matriz 3x3 preenchida com “X” e “O”, verifique se um mesmo símbolo constitui uma sequência de três em alguma linha, coluna ou diagonal. (DESAFIO)
-X O X
-O X O
-O X X
+- X O X
+- O X O
+- O X X
 20.	Faça um algoritmo para retornar o número das colunas que possuem todos os elementos iguais.

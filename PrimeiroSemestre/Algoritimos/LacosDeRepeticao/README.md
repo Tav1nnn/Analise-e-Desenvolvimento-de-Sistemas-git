@@ -1,15 +1,16 @@
+# Lista exercicio laços de repetição
 1.	Para os exercícios abaixo, desenvolver um algoritmo em C++:
-○	Faça um algoritmo para imprimir os números de 1 a 100.
-○	Faça um algoritmo para imprimir os números pares de 10 a 50.
-○	Faça um algoritmo para imprimir os números ímpares de 10 a 50.
-○	Faça um algoritmo para imprimir os números de 20 a 0.
-○	Faça um algoritmo para somar os números entre 3 e 10.
-○	Faça um algoritmo para somar os números pares de 4 a 20.
-○	Faça um algoritmo para somar os números ímpares de 10 a 15.
-○	Faça um algoritmo para multiplicar os números no intervalo fechado de 2 a 5.
-○	Faça um algoritmo para calcular a média dos números de 1 a 10.
-○	Faça um algoritmo para calcular a média dos números ímpares de 10 a 50.
-○	Faça um algoritmo para calcular a média dos números divisíveis por 5 no intervalo de 10 a 50.
+-	Faça um algoritmo para imprimir os números de 1 a 100.
+-	Faça um algoritmo para imprimir os números pares de 10 a 50.
+-	Faça um algoritmo para imprimir os números ímpares de 10 a 50.
+-	Faça um algoritmo para imprimir os números de 20 a 0.
+-	Faça um algoritmo para somar os números entre 3 e 10.
+-	Faça um algoritmo para somar os números pares de 4 a 20.
+-	Faça um algoritmo para somar os números ímpares de 10 a 15.
+-	Faça um algoritmo para multiplicar os números no intervalo fechado de 2 a 5.
+-	Faça um algoritmo para calcular a média dos números de 1 a 10.
+-	Faça um algoritmo para calcular a média dos números ímpares de 10 a 50.
+-	Faça um algoritmo para calcular a média dos números divisíveis por 5 no intervalo de 10 a 50.
 2.	Implemente um algoritmo para apresentar a tabuada de um número lido pelo usuário. O número recebido do Usuário deve ser natural. (Números naturais são números inteiros positivos).
 3.	Implemente um algoritmo para apresentar a tabuada de 1 a 10.
 4.	Faça um programa que lê um valor inteiro e, em seguida, encontre e imprima os divisores desse número.

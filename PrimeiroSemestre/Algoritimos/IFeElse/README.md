@@ -1,10 +1,10 @@
+# Lista IF e ELSE
 1.	Faça um algoritmo para verificar se um número é par e divisível por 10.
 2.	Faça um algoritmo para verificar se um número é divisível por 7 ou por 23.
 3.	Escreva um programa para ler 5 valores inteiros, escrever o maior 
 deles e apresentar a posição de ordem em qual ele foi digitado (se ele foi digitado por primeiro ou por segundo ou...)
 4.	Faça um algoritmo que recebe o nome de uma pessoa, a altura (em metros) e o peso (em Kg), calcule o peso ideal (fórmulas abaixo) e apresente o nome e a faixa que a pessoa se encontra
 - Fórmula PESO/(ALTURA*ALTURA)
- 
 5.	Um triângulo que todos os lados têm a mesma medida é chamado de equilátero, se dois lados têm a mesma medida é chamado de isósceles e com lados de medidas diferentes é chamado de escaleno. Faça um algoritmo que analise os lados de qualquer triângulo e retorne à classificação.
 6.	O governo do estado autorizou um aumento de salário para os funcionários públicos. Para tentar aproximar os valores pagos, o aumento depende do valor do salário atual. Para funcionários que ganham até R$ 1320 o aumento será de 11%, para funcionários que ganham entre R$ 1320 e R$ 3000 o aumento será de 9%, para funcionários que ganham entre R$ 3000 e R$ 7000, o aumento será de 6%, e finalmente, para os funcionários que ganham mais que R$ 7000, aumento de 1%. Faça um algoritmo que calcule o novo salário a partir do salário atual.
 7.	Escreva um programa para ler 3 valores inteiros (considere que não 
@@ -21,7 +21,6 @@ seguintes mensagens:
 -	ACESSO NEGADO caso a senha seja inválida.
 11.	Um banco emprega diferentes taxas de correção (anual) para um investimento dependendo do valor aplicado. Para valores até R$ 2000 (inclusive) a taxa de correção é de 10%, para valores entre R$ 2000 e R$ 5000
 (inclusive) a taxa de correção é de 12%, para valores maiores que R$ 5000 a taxa de correção é de 13%. Faça um algoritmo que indique a taxa de correção para um dado valor aplicado.
-
 12.	Escreva um programa para ler o número de lados de um polígono regular 
 e a medida do lado (em cm). Calcular e imprimir o seguinte:
 − Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
