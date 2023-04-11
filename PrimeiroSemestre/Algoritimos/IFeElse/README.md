@@ -1,6 +1,5 @@
 # Lista IF e ELSE
 1.	Faça um algoritmo para verificar se um número é par e divisível por 10.
-## 
 2.	Faça um algoritmo para verificar se um número é divisível por 7 ou por 23.
 3.	Escreva um programa para ler 5 valores inteiros, escrever o maior 
 deles e apresentar a posição de ordem em qual ele foi digitado (se ele foi digitado por primeiro ou por segundo ou...)
@@ -22,7 +21,6 @@ seguintes mensagens:
 -	ACESSO NEGADO caso a senha seja inválida.
 11.	Um banco emprega diferentes taxas de correção (anual) para um investimento dependendo do valor aplicado. Para valores até R$ 2000 (inclusive) a taxa de correção é de 10%, para valores entre R$ 2000 e R$ 5000
 (inclusive) a taxa de correção é de 12%, para valores maiores que R$ 5000 a taxa de correção é de 13%. Faça um algoritmo que indique a taxa de correção para um dado valor aplicado.
-
 12.	Escreva um programa para ler o número de lados de um polígono regular 
 e a medida do lado (em cm). Calcular e imprimir o seguinte:
 − Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
