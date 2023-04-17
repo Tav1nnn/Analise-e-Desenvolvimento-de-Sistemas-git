@@ -19,8 +19,6 @@
 - o nome do aluno com a maior média (desconsiderar empates).
 - o nome do aluno com a menor média.
 - uma lista com o nome dos alunos aprovados.
- 
-
 18.	Implemente um algoritmo para manipular matrizes que:
 - retorne a média de todos os elementos da matriz
 - retorne um vetor com a média de cada linha
