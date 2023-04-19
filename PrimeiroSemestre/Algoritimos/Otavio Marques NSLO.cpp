@@ -22,6 +22,7 @@ void DAA_vendaDeProdutos();  // declaração da função que vende os produtos
 void DAA_editarProdutos(); // declaração da função que edita os produtos
 void DAA_excluiProdutos(); // declaração da função que excluir os produtos
 int OT_informar_o_codigo();
+bool OT_validar_codigo(int OT_codigo);
 
 //---------------------------------------------------------------------------------------------------
 string DAA_voltaMenu; //variável auxiliar para esperar o usuário pressionar enter para voltar ao menu
@@ -72,9 +73,9 @@ void DAA_vendaDeProdutos(){
     int OT_codigo = OT_informar_o_codigo();
     float OT_qtdProduto;
 
-    if (DAA_quantidadeProdutoEstoque == 0) {
-        cout<<"Este produto não tem em estoque.";
-        DAA_menu();
+    if (DAA_quantidadeProdutoEstoque[OT_codigo] == 0) {
+        cout<<"Este produto não tem em estoque."<<endl;
+        DAA_limpaTelaTeclando();
     }
 
     cout<<"Digite a quantidade de que será vendida do produto "<<DAA_nomeProduto[OT_codigo]<<": ";
@@ -111,13 +112,34 @@ void DAA_excluiProdutos(){
 
     int OT_codigo  = OT_informar_o_codigo();
 
+    while (DAA_quantidadeProdutoEstoque[OT_codigo]!= 0) {
+        cout<<"Não pode excluir protudo em estoque"<<endl;
+        OT_codigo = OT_informar_o_codigo();
+    }
+    
+
     if(OT_codigo == 2){
-        DAA_controleQuantidadeCadastrados--;    
-    }else{
+        DAA_controleQuantidadeCadastrados--; 
+           
+    }else if(OT_codigo == 1){
         DAA_nomeProduto[OT_codigo] = DAA_nomeProduto[OT_codigo+1];
         DAA_precoProduto[OT_codigo] = DAA_precoProduto[OT_codigo+1];
         DAA_quantidadeProdutoEstoque[OT_codigo] = DAA_quantidadeProdutoEstoque[OT_codigo+1]; 
         DAA_unidadeMedidaProduto[OT_codigo] = DAA_unidadeMedidaProduto[OT_codigo+1]; 
+        DAA_controleQuantidadeCadastrados--;
+
+    }else {
+        //Posição 0 vai receber posição 1
+        DAA_nomeProduto[OT_codigo] = DAA_nomeProduto[OT_codigo+1];
+        DAA_precoProduto[OT_codigo] = DAA_precoProduto[OT_codigo+1];
+        DAA_quantidadeProdutoEstoque[OT_codigo] = DAA_quantidadeProdutoEstoque[OT_codigo+1]; 
+        DAA_unidadeMedidaProduto[OT_codigo] = DAA_unidadeMedidaProduto[OT_codigo+1]; 
+
+        //Posição 1 vai receber posição 2
+        DAA_nomeProduto[OT_codigo+1] = DAA_nomeProduto[OT_codigo+2];
+        DAA_precoProduto[OT_codigo+1] = DAA_precoProduto[OT_codigo+2];
+        DAA_quantidadeProdutoEstoque[OT_codigo+1] = DAA_quantidadeProdutoEstoque[OT_codigo+2]; 
+        DAA_unidadeMedidaProduto[OT_codigo+1] = DAA_unidadeMedidaProduto[OT_codigo+2]; 
         DAA_controleQuantidadeCadastrados--;
     }
     
@@ -130,14 +152,30 @@ int OT_informar_o_codigo(){
     cout<<"Digite o código do produto: ";
     cin>>OT_codigo;
 
-    while (OT_codigo>DAA_quantidadeMaximaDeProdutos) {
-        cout<<"Não existe produto com esse código."<<endl;
+
+
+    while (!OT_validar_codigo(OT_codigo)) {
+        cout<<"Código Inválido"<<endl;
         cout<<"Digite o código do produto: ";
         cin>>OT_codigo;
     }
 
     DAA_limparTela();
     return OT_codigo;
+}
+
+bool OT_validar_codigo(int OT_codigo) {
+    if(OT_codigo>DAA_quantidadeMaximaDeProdutos){
+        return false;
+
+    }else if(OT_codigo<0){
+        return false;
+
+    }else if(OT_codigo>DAA_controleQuantidadeCadastrados-1){
+        return false;
+    }
+
+    return true;
 }
 
 //---------------------------------------------------------------------------------------------------
